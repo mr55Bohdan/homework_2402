@@ -1,0 +1,42 @@
+using System;
+
+namespace HOMEWORK_1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {	
+		/*HOMEWORK1.1 */
+            int a_square, p_square, s_square;
+            Console.Write("a square=");
+            a_square = Convert.ToInt32(Console.ReadLine());
+            p_square = 4 * a_square;
+            s_square = a_square * a_square;
+            Console.WriteLine($"P square= {p_square}  S square= {s_square}");
+		
+		/*HOMEWORK1.2*/
+		string name;
+            int age;
+
+            Console.Write("What is your name? ");
+            name= Console.ReadLine();
+            Console.Write($"How old are you, {name}?");
+            age= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Full information age:{age}, name:{name}.");
+
+            /*HOMEWORK1.3*/
+            const double pi = 3.1415926535897931;
+            double l, r, S,V;
+            Console.Write("r of a circle=");
+            r = System.Convert.ToDouble(Console.ReadLine());
+            l = 2 * pi * r;
+            S = pi * r * r;
+            V=4 / 3 * pi * r * r * r;
+
+            Console.WriteLine($"length= {l}  area= {S}   volume={V}");
+
+
+
+        }
+    }
+}

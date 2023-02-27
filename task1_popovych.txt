@@ -1,0 +1,85 @@
+/*1*/
+using System;
+using System.IO;
+
+namespace task1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int ab1, ab2, ab3, ab4;
+            Console.Write("Read values a=");
+            int a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Read values b=");
+            int b = Convert.ToInt32(Console.ReadLine());
+            ab1 = a + b; ab2 = a - b; ab3 = a * b; ab4 = a / b;
+            Console.WriteLine("a+b=" + ab1);
+            Console.WriteLine("a-b=" + ab2);
+            Console.WriteLine("a*b=" + ab3);
+            Console.WriteLine("a/b=" + ab4);
+            // Console.WriteLine("Hello World!");
+        }
+    }
+}
+/*1.2*/
+using System;
+
+namespace task_1_2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("How are you?");
+            string answer = Console.ReadLine();
+            Console.WriteLine("You are "+answer);
+        }
+    }
+}
+/*1.3*/
+using System;
+
+namespace task1_3
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            char variables1, variables2, variables3;
+            Console.Write("enter first char ");
+            variables1 = Convert.ToChar(Console.ReadLine());
+            Console.Write("enter second char ");
+            variables2 = Convert.ToChar(Console.ReadLine());
+            Console.Write("enter thaird char ");
+            variables3 = Convert.ToChar(Console.ReadLine());
+            Console.WriteLine($"first char:{variables1}, second char:{variables2}, thaird char:{variables3}");
+        }
+    }
+}
+
+
+/*1.4*/
+using System;
+
+namespace task1_4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int a, b;
+            Console.Write("Read values a=");
+            a = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Read values b=");
+            b = Convert.ToInt32(Console.ReadLine());
+            bool Check;
+            if(a>0 && b>0)
+            { Check = true; }
+            else
+            { Check = false; }
+            Console.Write($"Check={Check}");
+
+        }
+    }
+}
